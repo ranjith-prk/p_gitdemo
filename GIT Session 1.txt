@@ -1,0 +1,89 @@
+													Date:24/Nov/21 
+=============================================================================================================================
+Create an instance from AWS and the start the process
+
+To connect from windows to linux instance through windows we use PUTTY utility by using username, Public IP and private key provied by aws.
+
+Public IP is used to connected outside the system. 
+Private IP is used to connect within the system.
+
+Connecting from Linux to Linux:
+
+   1.Copy Public IP from aws 
+   2.Open terminal change "keypair" permissions --> chmod 600 keyname - One time process
+   3.Linux to linux we use ssh command: #ssh -i keypairdestination username@publicIP 
+
+Windows to Linux  we use putty :
+
+   1.Download putty
+   2.Convert key in .pem to .ppk using putty gen
+   3.Open Putty and paste public ip in hostname or public ip option in session section
+   4.Click on SSH section --> Auth --> Browse keypair from system in privatekey option
+   5.Click on open --> It will connect to terminal
+   6.Type the user name and enter password if required
+   7.Then you can launch and see it on terminal screen
+
+=============================================================================================================================
+Version controll system:  GIT,SVN,PERFORCE,MERCURAL,CLEAR CASE
+
+It is a software used to control versions
+used to collaborate,work together and maintain compltete history of changes .
+
+Mainly used 
+1.Collaboration
+2.Maintain duplicates and remove
+3.Maintains history
+4.Acts as a backup
+
+Functions
+1.Allows devolopers work simultaneously
+2.Doesn't allow overwriting each other's changes
+3.Maintains history of every version
+
+Two types
+1. Centralised version control system (Acts as single point of failure)-->SVN
+2. Distributed version control system (Remote repository maintains in locat system)-->GIT(Torval linus devoloped GIT, who also devoloped LINUX)
+
+Features of GIT:
+ 1.GIT is open source
+ 2.GIT is fast and small
+ 3.Act as a backup
+ 4.Great security - uses sha(Secure hash algorithem)
+ 5.Install in anystem any OS
+ 6.GIT uses branches-Branching mechanism
+
+
+Installation of GIT:
+
+-->Linux(Debian) --> #sudo apt-get install git
+-->Linux(Fedora) --> #sudo yum install git
+-->Mac           --> http://git-scm.com/download/mac
+-->Windows       --> http://git-scm.com/download/win
+
+Can Use GIT in 3 ways:
+1.Git bash(mostly used)
+2.Git cmd
+3.Git GUI
+
+=========================================================
+Terminology:
+
+1.Repository --> Collection of files --> Files are called objects in GIT
+ Local Repository -->Where we commit on laptop i.e local folder, workstation
+ Remote Repository -->Where we commit our changes centrally/remotly that folder is remote repository
+2.Branch --> a copy of code 
+3.Master/Main --> a default branch in GIT
+4.Tag --> A meaningful name of branch ex:dev1.0,qa1.0
+5.Clone --> 
+6.Pull
+7.Push
+8.Stage/Index
+9.Merge
+10.Stash
+11.Fork
+12. .Git
+13.Head
+
+
+
+

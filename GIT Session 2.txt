@@ -1,0 +1,67 @@
+GIT - Session2								      	       Date:25/Nov/2021
+========================================================================================================
+
+Terminology:
+
+1.Repository --> Collection of files --> Files are called objects in GIT
+ 	Local Repository -->Where we commit on laptop i.e local folder,workstation
+ 	Remote Repository -->Where we commit our changes centrally/remotly that folder is remote repository
+2.Branch --> a copy of code 
+3.Master/Main --> a default branch in GIT
+4.Tag --> A meaningful name of branch ex:dev1.0,qa1.0
+5.Clone --> To setup a project into local system we use clone
+6.Pull --> To get the updates from remote repository to local
+7.Push --> To upload the changes from local system to remote
+8.Stage/Index --> A snapshot(image) of changes
+9.Merge --> To combine one branch to another branch or to add 2 branches
+10.Stash --> To save current working directory changes without adding staging and commit
+11.Fork --> To copy repository from one repository to another repository
+12. 	.Git --> A default folder when we initialize a git repository, it has config objects,logs etc.
+13	.Head --> Latest commit is called head
+
+
+Git work flow:
+
+                                       	Working directory
+					         -->add to staging area
+					staging area
+						  -->Git commit operation
+                                        Git repository
+
+On windows:
+
+Open gitbash
+Setup username and email
+
+
+On Linux:
+
+Open terminal
+#git config --global user.name "Test user"
+#git config --global user.email "testuser@test.com"
+
+
+Working on GIT:
+
+1. Create a folder -->#mkdir Gitdemo
+2. Go to folder ----->#cd Gitdemo
+3. Make this folder a git repository -->#git init ----> After initializition we see .git repository
+4. Create a newfolder/ File or modify existing file --> cat>sample.txt
+5. Get the status to know the changes -->#git status
+6. Add to staging area -->#git add sample.txt (can add multiple by spacing)
+7. Commit changes --> git commit -m "commit message" --> commit id is created for a commit
+8. To see commit history --> #git log or for short discription #git log --oneline
+9. To check the detailed history -->#gitshow "commit id"
+10. To revert changes which are done before adding to satging -->#git restore sample.txt
+11. To revert changes which are done after staging -->
+12. To revert changes which are done after commit -->
+13. To see the difference between saved changes and earlier stage before saving --> git diff sample.txt
+
+
+
+****commit = saving to a repository
+
+
+
+
+

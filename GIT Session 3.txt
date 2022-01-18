@@ -1,0 +1,46 @@
+											Date:26/Nov/2021
+========================================================================================================
+.git folders:
+==============
+1.config - is ia configuration file for git repository.
+2.Description - To set the name for git repository.
+3.Hooks - Place for git automated script.
+4.Index - Snapshot of object changes, This index cannot be read,it is understood by only kernal
+5.info - To exclude specific files from git commit by updating required files in it.
+6.logs - To see the commit history 
+7.Object - file in a git repository it has sub directories with digits in this directory we can find sha id of a change.
+8.refers and HEAD - we can find latest commit id in these folders
+========================================================================
+1.Before adding to staging area , to revert changes ---> #git restore filename -->
+2.After adding to staging area ,to revert changes we need to use 2 commands-----> 
+                                                                       1.#git restore --staged filname
+                                                                       2.#git restore filename
+3.After commiting , to revert changes ---> #git reset --hard HEAD~
+  to revert last two commits          ---> #git reset --hard HEAD~2 
+4.to see number of commits            ---> #git log --oneline |we -l 
+
+
+H.W --> How do you revert specific commit from commiting stage
+
+Branch:
+============================================================================
+Branch --> Master is a deafault branch
+
+1.to know current branch/to know the branches list --> #git branch
+2.To create a new branch ----> #git branch Dev --> it will copy commits from master branch
+--->* symbol indicates current branch
+3.Switch to branch ---> #git checkout branchname
+
+***changes on the branch donot happen by default on master branch untill merging is done*****
+
+4.To merge branch ---> #git merge branchname
+
+****conflicts arise when we edit same lines in two different branches, Then we have to merge manually. We can identify <<<<<< __________>>>>>> conflict here. Delete these and merge again***** 
+
+5.To create another branch and move to that branch ---> #git checkout -b branchname
+========================================================================================================
+
+
+                
+
+

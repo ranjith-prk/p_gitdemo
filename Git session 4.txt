@@ -1,0 +1,63 @@
+GitHub/Git labs are to maintain remote repository/central repository
+
+goto github.com--->create account--->maintain repository remotely and github is maintained by microsoft.
+
+public repository --> anyone can access /edit
+private repository --> only authorised people can access /edit
+
+after creating repository:
+============================================================
+1.Add local repository to remote repository
+2.Push the changes to the remote repository
+3.#git remote -v (list remote repositories to local)
+4.#git remote add origin repository url -->origion is a default name for remote repository.
+
+Remote repository can be accessed in htps url/SSH url --> we can use anyone.
+5.Upload changes --> #git push -u origion main/master
+
+***Under settings -->devoloper settings we find personal access token-->use this instead of password/you can generate a new token and use that***
+
+6.We can generate ssh key to login to github without username and password
+
+7.SSH key:
+=============================================
+-->#ssh-keygen -t rsa  --> to generate ssh key
+-->It will create two files under ~/.ssh 1. id-rsa 2. id-rsa.pub.
+-->we use only pub key
+-->copy this key in github-->settings-->ssh&gpg keys-->new ssh key-->Give name and paste the key
+6.Upload changes -->#git push sshurl --> To upload changes to remote repositories 
+========================================================================================
+
+htps url -->token key
+ssh url -->use ssh key
+====================================
+8.Changes done in reomote repository to local repository -->#git pull url
+9.#git clone --> used for the first time setup
+
+If it is private repository:
+Giving access:
+go to settings-->manage access-->add people
+we can transfer ownership under options of github
+
+Git stash:
+============================================
+--> To save changes temporarely without staging/commit --> before leaving the working branch, do the stash .
+#git stash list --> To check any stash
+#git stash --> To save temporarely
+#git stash apply --> To start making changes on stash
+#git stash drop --> delete stash id
+#git stash pop --> aplly and delete the stash
+
+Next class:
+Pull vs fetch
+Merge vs rebase
+reset vs revert
+
+
+
+
+
+
+
+
+

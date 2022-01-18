@@ -1,0 +1,40 @@
+Date:02/12/2-21
+
+
+Topics:
+====================================
+1.Difference between Pull and Fetch
+2.Difference between merge and rebase
+3.Difference between reset and revert
+
+Difference B/W Pull and Fetch:
+========================================
+gitpull:It pulls and merge the chnages to local repository from remote repository(Fetch+Merge)
+gitfetch:It doesnot merge the changes,it only pulls. After verifying we can merge manually(Only Fetch).
+#git merge FETCH_HEAD
+#git pull url
+#git fetch url
+
+*****We normally get tickets from Jeera on dashboard of Jeera along with usercase. We use pull/fetch and work on the resolution and complte the task by using pull/fetch****
+
+Difference B/W Merge and rebase:
+===========================================
+
+.Merge creates new commit and it will add changes
+.Rebase doesnot create extra commit but adds the changes
+.99% we use merge for remote devolopment purpose and rebase is normally used for local development purpose
+
+Difference B/W Reset and Revert:
+=============================================
+
+.git reset is used for undo the changes and commit
+
+.#git reset HEAD
+.#git reset --soft --> moves HEAD to specified commit reference, index and staging are untouched
+.#git reset --hard --> Unstage files AND undo anychanges in the working directory single last commit
+.revert
+.#git revert HEAD~3 --> Revert the changes by the fourth last commit in HEAD and create a new commit with reverted chnages
+.#git revert -n master~5..master~2 --> Revert the changes done by commits from last 5th commit in master (included) to the third last commit in master (included) ,but do not create any commit with the reverted changes. The revert only modifies the working tree and the index.
+========================================================================================================
+
+https://github.com/kellydevops/Meterials.git --> Git url for KELLY
